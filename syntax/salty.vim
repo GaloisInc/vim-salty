@@ -12,11 +12,13 @@ syn keyword saltyBoolean True False
 
 syn keyword saltyController controller
 syn keyword saltyWhere      where
-syn keyword saltyStructure  enum input output
+syn keyword saltyStructure  enum input output def
 syn match   saltyDefine     "[=:|]"
 syn match   saltyOperator   "\([<>\-!&/\\]\|==\|||\)\+"
 
 syn keyword saltySpec sys_trans sys_liveness env_trans env_liveness
+
+syn keyword saltySetFuns all any mutex
 
 syn keyword saltyControl case of if then else otherwise
 
@@ -27,6 +29,7 @@ highlight def link saltyController Structure
 highlight def link saltyWhere      Structure
 highlight def link saltyStructure  Structure
 highlight def link saltySpec       Statement
+highlight def link saltySetFuns    Keyword
 highlight def link saltyComment    Comment
 highlight def link saltyControl    Conditional
 highlight def link saltyDefine     Define
