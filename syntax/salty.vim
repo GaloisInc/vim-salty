@@ -16,7 +16,7 @@ syn keyword saltyStructure  enum input output def
 syn match   saltyDefine     "[=:|]"
 syn match   saltyOperator   "\([<>\-!&/\\]\|==\|||\)\+"
 
-syn keyword saltySpec sys_trans sys_liveness env_trans env_liveness
+syn keyword saltySpec sys_init sys_trans sys_liveness env_init env_trans env_liveness
 
 syn keyword saltySetFuns all any mutex
 
